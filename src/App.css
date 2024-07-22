@@ -1,0 +1,258 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  display: grid;
+  gap: 26px;
+  padding: 56px;
+}
+
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-info {
+  padding: 16px;
+}
+
+.card-info img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-info h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+.search-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-top: 30px;
+
+
+}
+input{
+  padding: 10px;
+ 
+}
+
+
+
+
+
+
+
+.Movie-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for vertical centering */
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+
+
+.loading {
+  font-size: 1.5rem; /* Adjust the size of the text */
+  color: #333; /* Text color */
+  font-weight: bold;
+  animation: loadingAnimation 0.5s infinite;
+
+}
+
+@keyframes loadingAnimation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.movie-page {
+  padding: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  gap: 2rem; /* Adjust the gap between the grid items */
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card-info img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* SingleMovie.css */
+.movie-not-found {
+  color: red;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+}
+
+.container-single{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  gap: 2rem; /* Adjust the gap between the grid items */
+}
+
+
+
+
+
+
+.movie-page-2 {
+  padding: 20px;
+  position: relative;;
+}
+
+.single-movie {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* .single-movie .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+} */
+
+.single-movie .header .but {
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 200px;
+  margin-top: 200px;
+  position:absolute;
+}
+
+.single-movie img {
+  max-width: 100%;
+  height: auto;
+  /* margin-bottom: 10px; */
+}
+
+/* .single-movie p {
+  text-align: right;
+  margin-bottom: 10px;
+} */
+
+/* .loading {
+  font-size: 24px;
+  text-align: center;
+} */
+
+/* .movie-not-found {
+  font-size: 24px;
+  text-align: center;
+} */
+
+
+
+/* Ensure this is added to your main CSS file or a dedicated nav CSS file */
+nav {
+  background-color: #333; /* Dark background color for the navigation bar */
+  padding: 10px; /* Space around the navigation bar */
+  position: fixed; /* Fixes the navigation bar to the top of the viewport */
+  top: 0; /* Aligns the navigation bar to the top */
+  left: 0; /* Aligns the navigation bar to the left */
+  width: 100%; /* Makes the navigation bar span the entire width of the viewport */
+  z-index: 1000; /* Ensures the navigation bar is on top of other content */
+}
+
+nav ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Arrange list items in a row */
+  justify-content: center; /* Center the items horizontally */
+  margin-left: 1100px;
+}
+
+nav li {
+  margin: 0 15px; /* Space between navigation items */
+}
+
+nav a {
+  color: white; /* Text color for the links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 16px; /* Font size for the links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+  color: #ff9800; /* Change color on hover */
+}
